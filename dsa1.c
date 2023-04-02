@@ -1,5 +1,3 @@
-// Binary Search in C
-
 #include <stdio.h>
 // binary search using recursion
 int binarySearch(int array[], int x, int low, int high)
@@ -30,4 +28,6 @@ int main()
         printf("Not found");
     else
         printf("Element is found at index %d", result);
+    
+    return 0;
 }

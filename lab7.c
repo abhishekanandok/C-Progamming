@@ -13,9 +13,9 @@ int main ()
 
 int expo(int x,int n)
 {
-    if (n==1)
+    if (n==0)
     {
-        return x;
+        return 1;
     }
     int pown = x*expo(x,(n-1));
     return pown;

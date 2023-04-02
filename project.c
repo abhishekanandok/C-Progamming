@@ -29,7 +29,7 @@ int main()
     int num_teachers;
 
     // Input the number of students, teachers, and staff
-    printf("Enter the number of students: "); //number liya gaya,taki loop unta bar hi chale
+    printf("Enter the number of students: "); // number liya gaya,taki loop unta bar hi chale
     scanf("%d", &num_students);
 
     printf("Enter the number of teachers: ");
@@ -79,6 +79,31 @@ int main()
         printf("Course is :- %s \n", students[i].course);
         printf("Year :- %d \n", students[i].year);
     }
+
+    // Print the information of teachers
+    printf("\nInformation of teachers:\n");
+    for (int i = 0; i < n_teachers; i++)
+    {
+        printf("\nID: %d\n", teachers[i].id);
+        printf("Name: %s\n", teachers[i].name);
+        printf("Department: %s\n", teachers[i].department);
+        printf("Qualification: %s\n", teachers[i].qualification);
+    }
+
+    // Print the information of staff
+    printf("\nInformation of staff:\n");
+    for (int i = 0; i < n_staff; i++)
+    {
+        printf("\nID: %d\n", staffs[i].id);
+        printf("Name: %s\n", staffs[i].name);
+        printf("Department: %s\n", staffs[i].department);
+        printf("Job title: %s\n", staffs[i].job_title);
+    }
+
+    // Free the memory allocated for the arrays of structures
+    free(students);
+    free(teachers);
+    free(staffs);
 
     return 0;
 }
