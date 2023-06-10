@@ -1,8 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
     int i;
-    //keep taking numbers as input from user until user enters a number which is multiple of 7
+    // keep taking numbers as input from user until user enters a number which is multiple of 7
 
     do
     {
@@ -10,12 +11,13 @@ int main(){
         scanf("%d", &i);
         printf("%d\n", i);
 
-        if(i % 7 == 0) {
+        if (i % 7 == 0)
+        {
             break;
         }
-        
+
     } while (1);
     printf("thank");
-    
+
     return 0;
 }

@@ -13,18 +13,14 @@ int main()
     printf("Original address in x = %u\n", x);
     printf("Original address in y = %u\n", y);
     printf("Original address in z = %u\n", z);
-   
-    printf("New address in x = %u\n", x);
-    printf("New address in y = %u\n", y);
-    printf("New address in z = %u\n", z);
-
-    printf("Value of i = %d\n", *x);
-    printf("Value of j = %f\n", *y);
-    printf("Value of k = %c\n", *z);
 
     *x++;
     *y++;
     *z++;
+
+    printf("New address in x = %u\n", x);
+    printf("New address in y = %u\n", y);
+    printf("New address in z = %u\n", z);
 
     printf("Value of i = %d\n", *x);
     printf("Value of j = %f\n", *y);

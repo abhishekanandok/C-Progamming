@@ -6,7 +6,7 @@ int main()
     // Write a program to check if a given number of n digits is Armstrong number or not.
 
     int n, r, sum = 0, temp, i, p = 0;
-    printf("enter number \n");
+    printf("enter the number \n");
     scanf("%d", &n);
     temp = n;
 
