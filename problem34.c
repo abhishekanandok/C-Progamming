@@ -14,11 +14,19 @@ int main()
     printf("Original address in y = %u\n", y);
     printf("Original address in z = %u\n", z);
 
-    *x++;
+    *x++;  // x++ same hi bat
     *y++;
     *z++;
 
-    printf("New address in x = %u\n", x);
+    printf("New address in *x++ = %u\n", x);
+    printf("New address in y = %u\n", y);
+    printf("New address in z = %u\n", z);
+
+    x++;  // x++ same hi bat
+    y++;
+    z--;
+
+    printf("New address in x++ = %u\n", x);
     printf("New address in y = %u\n", y);
     printf("New address in z = %u\n", z);
 
